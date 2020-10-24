@@ -16,7 +16,7 @@ export const theme = createMuiTheme({
     overrides: {
         MuiTextField: {
             root: {
-                marginBottom: '20px'
+                marginBottom: '10px'
             }
         }
     }

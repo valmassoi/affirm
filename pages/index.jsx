@@ -5,6 +5,12 @@ import CreditCardForm from '../components/CreditCardForm'
 import styles from '../styles/Home.module.scss'
 
 const Home = () => {
+  const handleValidForm = (formValues) => {
+    if (window) {
+      window.alert(`Valid form!\n\n${JSON.stringify(formValues)}\n\nTODO POST 🚀`);
+    }
+  }
+
   return (
     <div className={styles.container}>
       <Head>
@@ -13,7 +19,7 @@ const Home = () => {
       </Head>
 
       <main className={styles.main}>
-        <CreditCardForm />
+        <CreditCardForm onValidForm={handleValidForm} />
       </main>
 
       <footer className={styles.footer}>
